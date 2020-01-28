@@ -41,16 +41,12 @@ const Images = () => {
 				<img src={preloader} alt="preloader" />
 			) : (
 				<>
-					<h1>TEST APP</h1>
+					<h3>TEST APP</h3>
 					<div className="container">
 						{images.map(({ url, id }) => (
 							<Fragment key={id}>
 								<Button variant="link" onClick={() => openModal(id)}>
-									<img
-										src={url}
-										alt="previewImage"
-										style={{ margin: '10px' }}
-									/>
+									<img src={url} alt="previewImage" style={{ margin: '3px' }} />
 								</Button>
 							</Fragment>
 						))}
